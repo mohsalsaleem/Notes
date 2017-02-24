@@ -11,10 +11,10 @@
   export default {
     ready () {
       this.mason()
+      console.log(this.$refs)
     },
     components: {
-      Item,
-      VueScrollbar
+      Item
     },
     name: 'items',
     data () {
@@ -24,7 +24,6 @@
           for (let i = 0; i < 10; i++) {
             let item = {}
             let arrayLength = Math.floor(Math.random() * (100 - 20) + 20)
-            console.log(arrayLength)
             item.text = Array(arrayLength).join('Lorem ')
             items.push(item)
           }

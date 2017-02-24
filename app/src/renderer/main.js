@@ -6,8 +6,6 @@ import VueMaterial from 'vue-material'
 import 'vue-material/dist/vue-material.css'
 import App from './App'
 import routes from './routes'
-import VueScrollbar from 'vue2-scrollbar'
-import 'vue2-scrollbar/style/vue2-scrollbar.css'
 
 Vue.use(Electron)
 Vue.use(Resource)
@@ -22,8 +20,6 @@ Vue.material.registerTheme('default', {
   warn: 'red',
   background: 'white'
 })
-
-console.log(VueScrollbar)
 
 const router = new Router({
   scrollBehavior: () => ({ y: 0 }),
