@@ -9,9 +9,9 @@
 <script>
   import Item from './Item'
   export default {
-    ready () {
-      this.mason()
-      console.log(this.$refs)
+    mounted () {
+      console.log('hello')
+      // this.mason()
     },
     components: {
       Item
@@ -37,6 +37,7 @@
           itemSelector: '.grid-item',
           columnWidth: 250
         })
+        console.log('Hello')
         $grid.masonry('layout')
       }
     }
@@ -46,6 +47,7 @@
 <style>
 	#items {
 		margin: 15px;
+    background-color: #2196f3;
 	}
 
 	#items .md-whiteframe {

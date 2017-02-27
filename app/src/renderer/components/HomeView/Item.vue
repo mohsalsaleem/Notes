@@ -17,16 +17,12 @@
 		</div>
 		<md-dialog md-open-from="#custom" md-close-to="#custom" ref="editor" class="fullscreen editor">
   			<md-dialog-content>
-  				<md-button class="md-fab md-fab-top-left" id="fab" @click.native="closeDialog('editor')">
-  					<md-icon>add</md-icon>
-				</md-button>
   				<md-input-container>
     				<md-textarea v-model="item.text"></md-textarea>
   				</md-input-container>
   			</md-dialog-content>
   			<md-dialog-actions>
-    			<md-button class="md-primary" @click.native="closeDialog('editor')">Cancel</md-button>
-    			<md-button class="md-primary" @click.native="closeDialog('editor')">Ok</md-button>
+    			<md-button class="md-primary" @click.native="closeDialog('editor')">Close</md-button>
   			</md-dialog-actions>
 		</md-dialog>
 	</md-layout>
@@ -70,6 +66,7 @@
 	.card-layout {
 		margin: 0px 5% 5% 5%;
   		display: flex;
+  		background-color: white;
 	}
 	.card-layout p {
 		margin: 15px;

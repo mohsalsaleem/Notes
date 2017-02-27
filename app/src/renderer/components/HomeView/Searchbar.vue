@@ -3,7 +3,7 @@
     <md-whiteframe md-elevation="2">
       <form novalidate @submit.stop.prevent="submit">
         <md-input-container>
-          <md-icon class="md-primary">search</md-icon>
+          <md-icon class="md-default">search</md-icon>
           <label>Search</label>
           <md-input type="text"></md-input>
         </md-input-container>
@@ -15,6 +15,11 @@
 <style>
   #searchbar .md-whiteframe {
     margin-top: 15px;
+    background-color: #2196f3;
+  }
+
+  #searchbar .md-icon, #searchbar label, #searchbar input {
+    color: white;
   }
 
   #searchbar form {
